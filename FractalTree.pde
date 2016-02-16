@@ -33,7 +33,7 @@ public class Snowflake
   Snowflake()
   {
     x=(int)(Math.random()*640);
-    y=(int)(Math.random()*479);
+    y=(int)(Math.random()*480);
     snowSize=(int)(Math.random()*6);
   }
   void show()
@@ -45,7 +45,7 @@ public class Snowflake
   void erase()
   {
     fill(0);
-    ellipse(x, y, snowSize+3, snowSize+3);
+    ellipse(x, y, snowSize, snowSize);
   }
   void move()
   {
